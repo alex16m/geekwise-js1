@@ -133,3 +133,6 @@ var birthYear = userBirth.toLocaleString('en-us', {year: "2-digit"});
 
 
 console.log(birthMonth + " " + birthDay + ", " + birthYear);
+
+
+// MDN Mozilla Developer Network
