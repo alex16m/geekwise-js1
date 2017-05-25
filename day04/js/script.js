@@ -68,3 +68,13 @@ else if(name === "matt"){
 }else {
     // ultra fall-back
 }
+
+// is equal to ===
+// = assignment operator
+
+// create a choose your own adventure story
+// prompts
+// confirm
+// alerts
+// if/else if/else
+// string method
