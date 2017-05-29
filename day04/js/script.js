@@ -78,3 +78,5 @@ else if(name === "matt"){
 // alerts
 // if/else if/else
 // string method
+
+const FIRST_NAME = "alkjsd";
