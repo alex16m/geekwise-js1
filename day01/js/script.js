@@ -7,7 +7,7 @@ var use_underscores;
 var _underscores;
 var $dollarsign;
 
-console.log("sending a messaage to ocnsole.");
+console.log("sending a messaage to console.");
 console.info("Sending information message");
 console.warn("here's a warning");
 console.error("here's an error");
