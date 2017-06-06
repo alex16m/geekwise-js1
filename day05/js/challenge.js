@@ -13,9 +13,17 @@ function welcome(name){
 }
 
 
+function properCap(firstName){
+    firstName = firstName.charAt(0).toUpperCase() + firstName.substr(1).toLowerCase();
+    return firstName;
+}
+
 function getUserName(){
     var firstName = prompt("enter your firstname here:").trim();
-    firstName = firstName.charAt(0).toUpperCase() + firstName.substr(1).toLowerCase();
 
-    welcome(firstName);
+    properCap(firstName);
+
+    welcome(properCap(firstName));
 }
+
+console.log(properCap('aslkjkDS'));
