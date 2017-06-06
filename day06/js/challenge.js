@@ -1,6 +1,6 @@
 var firstName = document.getElementById("firstName");
-var secondName = document.getElementsByTagName('button')[1];
-var thirdName = document.querySelector("#lastName");
+var middleName = document.getElementsByTagName('button')[1];
+var lastName = document.querySelector("li:last-child button");
 
 var combinedName;
 var userFirst = "userFirst";
@@ -11,21 +11,22 @@ function properCap(userName){
     return userName = userName.charAt(0).toUpperCase() + userName.substr(1).toLowerCase();
 }
 
+function getName(str){
+    return properCap(prompt("enter name here: "))
+}
+
 firstName.addEventListener("click",function(){
-    userFirst = prompt("enter first name here please: ").trim();
-    userFirst = properCap(userFirst);
+    userFirst = properCap(prompt("enter first name here please: ").trim());
 });
 
 
 
 middleName.addEventListener("click",function(){
-    userMiddle = prompt("enter middle name here please: ").trim();
-    userMiddle = properCap(userMiddle);
+    userMiddle = properCapp(prompt("enter middle name here please: ").trim());
 });
 
 lastName.addEventListener("click",function(){
-    userLast = prompt("enter last name here please: ").trim();
-    userLast = properCap(userLast);
+    userLast = properCap(prompt("enter last name here please: ").trim());
     combinedName = `${userFirst} ${userMiddle} ${userLast}`;
     alert(combinedName);
 });
