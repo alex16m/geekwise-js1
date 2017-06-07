@@ -11,9 +11,9 @@ function properCap(userName){
     return userName = userName.charAt(0).toUpperCase() + userName.substr(1).toLowerCase();
 }
 
-function getName(str){
-    return properCap(prompt("enter name here: "))
-}
+// firstName.addEventListener('click', getName){
+//
+// };
 
 firstName.addEventListener("click",function(){
     userFirst = properCap(prompt("enter first name here please: ").trim());
@@ -21,8 +21,8 @@ firstName.addEventListener("click",function(){
 
 
 
-middleName.addEventListener("click",function(){
-    userMiddle = properCapp(prompt("enter middle name here please: ").trim());
+middleName.addEventListener("click",function(e){
+    userMiddle = getName(e.);
 });
 
 lastName.addEventListener("click",function(){
@@ -30,3 +30,7 @@ lastName.addEventListener("click",function(){
     combinedName = `${userFirst} ${userMiddle} ${userLast}`;
     alert(combinedName);
 });
+
+function getName(str){
+    return properCap(prompt("enter " + this.innerHTML + " here please: ")).trim();
+}
